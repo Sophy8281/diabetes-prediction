@@ -1,0 +1,84 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="{% static 'bootstrap/css/bootstrap.min.css' %}"
+    />
+    <title>Home</title>
+    <style>
+        body{
+            background-color:lightblue;
+        }
+        .main{
+            position:fixed;
+            top:105px;
+            left:410px;
+            width:550px;
+            border-radius:10px;
+            align-items:center;
+        }
+        h1{
+            padding:35px;
+            color:white;
+            font-size:30px;
+            font-weight:bold;
+        }
+
+    </style>
+</head>
+<body>
+<h1 class="text-center bg-primary">Diabetes Disease Prediction Page</h1>
+<div align = 'center' class="main bg-info">
+    <h1>Please enter the following information:</h1>
+    <form action = "result">
+        <table>
+            <tr>
+                <td align="right">Pregnancies:</td>
+                <td align="left"><input type="text" name="n1" required></td>
+            </tr>
+
+            <tr>
+                <td align="right">Glucose:</td>
+                <td align="left"><input type="text" name="n2" required></td>
+            </tr>
+
+            <tr>
+                <td align="right">Blood Pressure:</td>
+                <td align="left"><input type="text" name="n3" required></td>
+            </tr>
+
+            <tr>
+                <td align="right">Skin Thickness:</td>
+                <td align="left"><input type="text" name="n4" required></td>
+            </tr>
+
+            <tr>
+                <td align="right">Insulin:</td>
+                <td align="left"><input type="text" name="n5" required></td>
+            </tr>
+
+            <tr>
+                <td align="right">BMI:</td>
+                <td align="left"><input type="text" name="n6" required></td>
+            </tr>
+
+            <tr>
+                <td align="right">Diabetes Pedigree Function:</td>
+                <td align="left"><input type="text" name="n7" required></td>
+            </tr>
+
+            <tr>
+                <td align="right">Age:</td>
+                <td align="left"><input type="text" name="n8" required></td>
+            </tr>
+        </table>
+        <input type="submit" class="btn btn-primary">
+    </form>
+        Result:{{result2}}
+    </div>
+</body>
+</html>

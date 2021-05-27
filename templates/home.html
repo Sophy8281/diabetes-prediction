@@ -1,0 +1,29 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="{% static 'bootstrap/css/bootstrap.min.css' %}"
+    />
+    <title>Home</title>
+    <style>
+        body{
+            background-color:lightblue;
+        }
+        h1{
+            margin-top:250px;
+        }
+</style>
+</head>
+<body>
+    <div align = 'center' class="container">
+        <h1>WELCOME TO DIABETES PREDICTION SYSTEM</h1>
+    <form action = "diabetes">
+        <input class="btn btn-primary" type="submit" value="GET STARTED">
+    </form>
+    </div>
+</body>
+</html>
